@@ -1,0 +1,114 @@
+:root {
+  --color-neutral-50: #f2f3f5;
+  --color-neutral-100: #e4e4e5;
+  --color-neutral-200: #d7d7d8;
+  --color-neutral-300: #878689;
+  --color-neutral-400: #4a4950;
+  --color-neutral-500: #37363b;
+  --color-neutral-600: #2c2b2f;
+  --color-neutral-700: #26252a;
+  --color-neutral-800: #212023;
+  --color-neutral-900: #1a1a1c;
+  --color-neutral-950: #1a1a1c;
+
+  --color-text-100: #efefef;
+  --color-text-300: #dedede;
+  --color-text-500: #eee;
+  --color-text-900: #fff;
+
+  --color-green-500: hsl(158, 81%, 39%);
+  --color-green-dark: hsla(158, 90%, 39%, 0.08);
+}
+
+@layer {
+  .bg-background {
+    @apply bg-neutral-800;
+  }
+  .bg-background-deep {
+    @apply bg-neutral-900;
+  }
+  .bg-background-tester {
+    @apply bg-neutral-500;
+  }
+  .bg-card {
+    @apply bg-neutral-500;
+  }
+  .text-muted {
+    @apply text-neutral-200;
+  }
+  .text-foreground {
+    @apply text-neutral-100;
+  }
+  .text-light {
+    @apply text-neutral-50;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+

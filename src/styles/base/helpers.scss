@@ -1,0 +1,138 @@
+.react-transform-wrapper,
+.react-transform-component {
+  width: 100%;
+  height: 100%;
+}
+
+.zone {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 15;
+  &:hover {
+    cursor: pointer;
+  }
+  transition: 0.1s ease all;
+  &--purple {
+    @apply fill-purple-200 stroke-purple-500;
+    &:hover,
+    &.active {
+      @apply fill-purple-300;
+    }
+  }
+  &--blue {
+    @apply fill-blue-200 stroke-blue-500;
+    &:hover,
+    &.active {
+      @apply fill-blue-300;
+    }
+  }
+  &--green {
+    @apply fill-green-200 stroke-green-500;
+    &:hover,
+    &.active {
+      @apply fill-green-300;
+    }
+  }
+  &--magenta {
+    @apply fill-violet-200 stroke-violet-500;
+    &:hover,
+    &.active {
+      @apply fill-violet-300;
+    }
+  }
+  &--orange {
+    @apply fill-orange-200 stroke-orange-500;
+    &:hover,
+    &.active {
+      @apply fill-orange-300;
+    }
+  }
+  &--kiosk {
+    @apply fill-teal-200 stroke-teal-500;
+    &:hover,
+    &.active {
+      @apply fill-teal-300;
+    }
+  }
+  &--anchor {
+    @apply fill-sky-200 stroke-sky-500;
+    &:hover,
+    &.active {
+      @apply fill-sky-300;
+    }
+  }
+}
+
+.zone-link {
+  @apply text-neutral-900 text-left;
+  &.active {
+    @apply font-bold;
+  }
+  &--purple {
+    &:hover,
+    &.active {
+      @apply text-purple-500;
+    }
+  }
+  &--blue {
+    &:hover,
+    &.active {
+      @apply text-blue-500;
+    }
+  }
+  &--green {
+    &:hover,
+    &.active {
+      @apply text-green-500;
+    }
+  }
+  &--magenta {
+    &:hover,
+    &.active {
+      @apply text-violet-500;
+    }
+  }
+  &--orange {
+    &:hover,
+    &.active {
+      @apply text-orange-500;
+    }
+  }
+  &--kiosk {
+    &:hover,
+    &.active {
+      @apply text-teal-500;
+    }
+  }
+  &--anchor {
+    &:hover,
+    &.active {
+      @apply text-sky-500;
+    }
+  }
+}
+
+.category-title {
+  @apply font-bold text-xl mb-4 text-neutral-900;
+  &--purple {
+    @apply text-purple-500;
+  }
+  &--blue {
+    @apply text-blue-500;
+  }
+  &--green {
+    @apply text-green-500;
+  }
+  &--magenta {
+    @apply text-violet-500;
+  }
+  &--orange {
+    @apply text-orange-500;
+  }
+  &--kiosk {
+    @apply text-teal-500;
+  }
+  &--anchor {
+    @apply text-sky-500;
+  }
+}
