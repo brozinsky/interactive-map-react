@@ -1,0 +1,1 @@
+import{Q as r,c as t,a as o,j as e,R as s,b as n,M as a,d as i,e as c,E as d}from"./QueryClientProvider-083b9c4f.js";const l=new r,j=t([{path:"/",element:e.jsx(c,{}),errorElement:e.jsx(d,{})}]);o.createRoot(document.getElementById("root")).render(e.jsx(s.StrictMode,{children:e.jsx(n,{client:l,children:e.jsx(a,{children:e.jsx(i,{router:j})})})}));
