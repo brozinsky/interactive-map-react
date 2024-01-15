@@ -136,3 +136,28 @@
     @apply text-sky-500;
   }
 }
+
+.heading {
+  @apply font-bold;
+  &--purple {
+    @apply text-purple-500;
+  }
+  &--blue {
+    @apply text-blue-500;
+  }
+  &--green {
+    @apply text-green-500;
+  }
+  &--magenta {
+    @apply text-violet-500;
+  }
+  &--orange {
+    @apply text-orange-500;
+  }
+  &--kiosk {
+    @apply text-teal-500;
+  }
+  &--anchor {
+    @apply text-sky-500;
+  }
+}

@@ -2,10 +2,16 @@ import { paths } from "@/lib/paths";
 import clsx from "clsx";
 import React from "react";
 
-export default function Map({ handleZoom, activeId, handleReset }) {
-    const handlePathClick = (id) => {
-        activeId !== id ? handleZoom(id) : handleReset()
-    }
+type Props = {
+  handleZoom: (id: string) => void;
+  activeId: string | null;
+  handleReset: () => void;
+};
+
+export default function Map({ handleZoom, activeId, handleReset }: Props) {
+  const handlePathClick = (id: string) => {
+    activeId !== id ? handleZoom(id) : handleReset();
+  };
   return (
     <svg
       className="w-full h-full max-h-screen"
@@ -26,7 +32,7 @@ export default function Map({ handleZoom, activeId, handleReset }) {
             key={id}
             id={id}
             onClick={() => handlePathClick(id)}
-            className={clsx(`zone zone--${color}`, { "active": activeId === id })}
+            className={clsx(`zone zone--${color}`, { active: activeId === id })}
             d={d}
             // title={title}
           />

@@ -2,17 +2,16 @@ import Controls from "@/components/modules/Controls";
 import Details from "@/components/modules/Details";
 import Map from "@/components/modules/Map";
 import Panel from "@/components/modules/Panel";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   TransformWrapper,
   TransformComponent,
   ReactZoomPanPinchRef,
-  useControls,
 } from "react-zoom-pan-pinch";
 
 export default function Root() {
   const [openDetails, setOpenDetails] = useState(false);
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState<string | null>(null);
   const transformWrapperRef = useRef<ReactZoomPanPinchRef>(null);
 
   const handleReset = () => {
@@ -20,7 +19,7 @@ export default function Root() {
     setActiveId(null);
     transformWrapperRef.current?.resetTransform();
   };
-  const handleZoom = (id) => {
+  const handleZoom = (id: string) => {
     setOpenDetails(true);
     setActiveId(id);
     transformWrapperRef.current?.zoomToElement(id);
@@ -28,7 +27,7 @@ export default function Root() {
   return (
     <>
       <div className="w-full ">
-        <TransformWrapper ref={transformWrapperRef}>
+        <TransformWrapper maxScale={2} ref={transformWrapperRef}>
           <div className="">
             <div className="flex flex-row relative">
               <Controls />
